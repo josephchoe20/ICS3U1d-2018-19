@@ -23,7 +23,7 @@ def draw_tree(x, y) :
     # draw trunk
     arcade.draw_rectangle_filled(x + 27, y - 50, 20, 80, arcade.color.DARK_BROWN)
     # draw hole in trunk
-    arcade.draw_circle_filled(x + 27.5, y- 55, 6, arcade.color.BLACK_BEAN)
+    arcade.draw_circle_filled(x + 27.5, y - 55, 6, arcade.color.BLACK_BEAN)
     # draw leaves
     arcade.draw_circle_filled(x + 47, y - 10, 30, arcade.color.APPLE_GREEN)
     arcade.draw_circle_filled(x + 7, y - 10, 30, arcade.color.APPLE_GREEN)
@@ -49,8 +49,8 @@ def main():
     draw_cloud(300, 350)
     draw_cloud(650, 450)
     draw_cloud(200, 500)
-    draw_hill(400, 150)
-    draw_tree()
+    draw_hill()
+    draw_tree(400, 150)
 
     # Finish and run
     arcade.finish_render()
